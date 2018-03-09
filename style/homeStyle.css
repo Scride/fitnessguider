@@ -1,0 +1,116 @@
+#bodyMenu{
+	width: 70%;
+	/*height: 400px;*/
+	margin-left: 15%;
+	background-color: powderblue;
+}
+#slider_row{
+	width: 100%;
+	height: 395px;
+	background-color: yellow;
+	margin-top: 0px;
+	overflow: hidden;
+}
+#slider_row img{
+	width: 100%;
+	height: 100%;
+}
+#slider{
+	display: block;
+	width: 5330px;
+	height: 400px;
+	margin: 0px;
+	padding: 0px;
+}
+.slide{
+	float: left;
+	list-style-type: none;
+}
+.pic_list{
+	width: 100%;
+	padding: 0px;
+	margin-top: 0px;
+	color: white;
+    color: #fff!important;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.58);
+    font-size: 17pt;
+    font-family: helvetica,arial;
+    font-style: oblique;
+    text-align: center;
+    text-decoration: none!important;
+}
+.pic_list li{
+	box-shadow: 0px 0px 5px 8px rgba(112, 96, 96, 0.49) inset;
+}
+.pic_list li:hover{
+	background-color: #B20000!important;
+}
+#bm_first{
+	width: 20%;
+	border: 1px solid red;
+	position: absolute;
+	float: left;
+	left: 17%;
+	background: red;
+}
+#bm_second{
+	width: 20%;
+	border: 1px solid red;
+	position: absolute;
+	left: 40%;
+	background: red;
+}
+
+#bm_third{
+	width: 20%;
+	border: 1px solid red;
+	position: absolute;
+	left: 63%;
+	background: red;
+}
+
+
+#slider_row img{
+    animation-name: slider_rowFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+ 
+}
+#bottom_list{
+	margin-top: -65px; 
+	margin-bottom: -135px;
+}
+
+
+/*
+ @keyframes slider_rowFadeInOut {
+    0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+#slider_row img:nth-of-type(1) {
+  animation-delay: 16s;
+}
+#slider_row img:nth-of-type(2) {
+  animation-delay: 12s;
+}
+#slider_row img:nth-of-type(3) {
+  animation-delay: 8s;
+}
+#slider_row img:nth-of-type(4) {
+  animation-delay: 4s;
+}
+*/

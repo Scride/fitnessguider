@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<title>Guider</title>
+	<meta http-equiv="content-type" content="text/html;charset=UTF8">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/mealStyle.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<script type="text/javascript" src="script/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
+	<script type="text/javascript" src="script/meal.js"></script>
+
+</head>
+
+<body>
+	<div id="main">
+		<div id="banner">
+			<img src="Pics/Cover.site2.jpg">
+		</div>
+		<div id="menu">
+			<span class="m_home" id="m_h">
+				<a href="index.html" class="m_txt">Home</a>		
+			</span>
+			<!--	<span class="m_home" id="m_workouts">
+				<a href="Workouts.html" class="m_txt">Workouts</a>		
+			</span> -->
+			<span class="m_home" id="m_programs">
+				<a href="Programs.html" class="m_txt">Programs</a>		
+			</span>
+			<span class="m_home" id="m_mp">
+				<a href="Meal_plan.html" class="m_txt">Mean plan</a>		
+			</span>
+			<span class="m_home" id="m_contact">
+				<a href="Contact.html" class="m_txt">Contact</a>		
+			</span>
+		<!--	<span class="m_soon">
+				<a href="index.html" class="m_txt">Coming soon</a>		 
+			</span> -->
+		</div>
+		<!-- <div id="calculator">-->
+			<div id="BMR">
+				<h2 >Calculate your BMR</h2>
+				<p>To determine your current BMR, please provide the following information:</p>
+				<form name="CalculateForm" method="POST">
+					<input type="text" name="weight" placeholder="weight in kg" id="weight">
+					<input type="text" name="height" placeholder="height in cm" id="height">
+					<input type="text" name="age" placeholder="age in years" id="age">
+					
+					<span class="genderSpan">Gender:</span>
+					<input type="radio" name="gender" class="genderRadio" id="MaleRadio" value="M" checked>
+					<label for="MaleRadio" class="labelGender">Male</label>
+					<input type="radio" name="gender" class="genderRadio" id="FemaleRadio" value="F">
+					<label for="FemaleRadio" class="labelGender">Female</label>
+					
+					<div class="center">
+						<button type="button" class="BMRbutton" id="CalculateButton">Calculate</button>
+					</div>
+					
+					<span>Calories your body burns while on rest:</span>
+					<input type="text" name="BMRrest" placeholder="BMR at rest" id="BMRrest">
+					<span>Calories your body burns on active days:</span>
+					<input type="text" name="BMRmotion" placeholder="BMR at motion" id="BMRmotion">
+					
+					<span class="genderSpan">Fitness goal:</span>
+					<input type="radio" name="goal" class="genderRadio" id="Fat_loss" value="fat" checked>
+					<label for="Fat_loss" class="labelGender">Fat loss</label>
+					<input type="radio" name="goal" class="genderRadio" id="Muscle_gain" value="muscle">
+					<label for="Muscle_gain" class="labelGender">Muscle gain</label>
+					<input type="radio" name="goal" class="genderRadio" id="Maintain" value="maintain">
+					<label for="Maintain" class="labelGender">Maintain</label>
+					
+					<div class="center">
+						<button type="button" class="BMRbutton" id="FinderButton">Make a meal plan</button>
+					</div>
+				</form>
+			</div>
+
+
+	<!--	</div> -->
+		<div id="mealContent">
+			<h1>Creating meal plan</h1>
+			<p>Creating meal plan, calculating BMR(Basal metabolic rate) and counting macros sounds difficult at the first place but it's very easy. First calculate your BMR and then chose what kind of goal do you have. Then click the button and create a meal plan.</p>
+			<div id="mealPlan">
+				
+				<div class="MealDiv sideBorder" id="breakfast">
+					<h2> Breakfast </h2>
+					<div class="mealFood">
+						<h3 id="B1"> Oat meal</h3> </br><h4 id="B1val" class="value"> </h4>
+					</div>
+					<div class="mealFood">						
+						<h3 id="B2"> Eggs</h3> </br><h4 id="B2val" class="value"> </h4>
+					</div>
+					<div class="mealFood">						
+						<h3 id="B3"> None</h3> </br><h4 id="B3val" class="value"></h4> 
+					</div>
+				</div>
+				
+				<div class="MealDiv sideBorder" id="lunch">
+					<h2> Lunch</h2>
+					<div class="mealFood">
+						<h3 id="L1"> Steck</h3> </br><h4 id="L1val" class="value"> </h4>
+					</div>
+					<div class="mealFood">						
+						<h3 id="L2"> Rise</h3> </br><h4 id="L2val" class="value"> </h4>
+					</div>
+					<div class="mealFood">						
+						<h3 id="L3"> Salad</h3> </br><h4 id="L3val" class="value">  </h4>
+					</div>
+				</div>
+
+				<div class="MealDiv sideBorder" id="lightMeal">
+					<h2> LightMeal</h2>
+					<div class="mealFood">
+						<h3 id="LM1"> Almonds</h3> </br><h4 id="LM1val" class="value"> </h4>
+					</div>
+					<div class="mealFood">						
+						<h3 id="LM2"> None</h3> </br><h4 id="LM2val" class="value"></h4> 
+					</div>
+					<div class="mealFood">						
+						<h3 id="LM3"> None</h3> </br><h4 id="LM3val" class="value"></h4> 
+					</div>
+				</div>
+				
+				<div class="MealDiv sideBorder" id="dinner">
+					<h2> Dinner</h2>
+					<div class="mealFood">
+						<h3 id="D1"> B. Sweet Potatos</h3> </br><h4 id="D1val" class="value"> </h4>
+					</div>
+					<div class="mealFood">						
+						<h3 id="D2"> Cooked Eggs</h3> </br><h4 id="D2val" class="value"> </h4>
+					</div>
+					<div class="mealFood">						
+						<h3 id="D3"> None</h3> </br><h4 id="D3val" class="value"> </h4>
+					</div>
+				</div></br>
+				
+			
+				<div id="calculation">
+					<h3>Calories: <strong id="TotalCal"></strong></h3>
+					<h3>Proteins: <strong id="TotalPro"></strong></h3>
+					<h3>Carbs: <strong id="TotalCarbs"></strong></h3>
+					<h3>Fat: <strong id="TotalFat"></strong></h3>
+				</div>
+				
+
+			</div>
+			
+
+		</div>
+		<div id="footer" class="margin-top">
+			
+			<div>
+				<h4>Information in this site is taken from: <a href="http://muscularstrength.com/">muscularstrength.com</a>, <a href="www.bodybuilding.com">bodybuilding.com</a>, <a href="https://www.muscleforlife.com">www.muscleforlife.com
+				</h4>
+			</div>
+			<div id="copyright">
+				<h2>Copyright to: fitnessguider &copy; </h2>
+			</div>
+		</div>
+		
+	</div>
+
+	
+</body>
+
+</html>
