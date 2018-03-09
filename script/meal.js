@@ -42,7 +42,7 @@ $(function(){
 		var Cal = BMRrest;
 		Cal = Cal-1000;
 		var meat = Cal/500;
-		var chicken;
+		var chicken = parseFloat(chicken).toFixed(0);
 		var steak; 
 		var CalShow = fatCal + proteinCal + carbsCal + 440;
 		if(meat<1){
