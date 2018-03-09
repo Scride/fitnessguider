@@ -57,9 +57,9 @@ $(function(){
 		}
 		fatG+=5;
 		proteinG+=40;
-		var add1 =  parseFloat(chicken).toFixed(0);
+		var add1 =  chicken;
 		var add2 = parseFloat(steak).toFixed(0);
-		add1+= 'g';
+		
 		add2+='g';
 		var MusPr_Intake = ['48g',3,'240g',add1,'48g','125g',1,0,0,add2,2,22, parseFloat(CalShow).toFixed(0), parseFloat(proteinG).toFixed(0), parseFloat(carbs).toFixed(0), parseFloat(fatG).toFixed(0)]
 
