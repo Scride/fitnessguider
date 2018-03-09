@@ -19,11 +19,11 @@ $(function(){
 		var steak; 
 		var CalShow = fatCal + proteinCal + carbsCal-150;
 		if(meat<1){
-			chicken = '75g';
-			steak = '50g';
+			chicken = 75;
+			steak = 50;
 		}
 		else{
-			chicken = 150*meat 
+			chicken = 150*meat;
 			steak = 100*meat;
 		}
 		var add1 =  parseFloat(chicken).toFixed(0);
@@ -48,8 +48,8 @@ $(function(){
 		var steak; 
 		var CalShow = fatCal + proteinCal + carbsCal + 440;
 		if(meat<1){
-			chicken = '75g';
-			steak = '50g';
+			chicken = 75;
+			steak = 50;
 		}
 		else{
 			chicken = 150*meat;
@@ -79,8 +79,8 @@ $(function(){
 		var steak; 
 		var CalShow = fatCal + proteinCal + carbsCal+50;
 		if(meat<1){
-			chicken = '75g';
-			steak = '50g';
+			chicken = 75;
+			steak = 50;
 		}
 		else{
 			chicken = 150*meat;
