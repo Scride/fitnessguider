@@ -49,6 +49,9 @@ $(function(){
 	$('#bm_third').click(function(){
 		window.location.href="Meal_plan.html";
 	});
+	$('#BeginnerTop').click(function(){
+		window.location.href="Beginner.html"
+	});
 	
 	
 
