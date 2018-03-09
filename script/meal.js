@@ -195,7 +195,7 @@ $(function(){
 			if(goal === 'fat'){
 				if(BMRrest<1000){
 					$('#mealPlan').food('Oatmeal', 'Eggs', 'Apple', 'Chicken', 'Br. Rice', 'Vegetables', 'Protein bar', 'Yogurt', 'none', 'Steak', 'Sweet Potatoes', 'none');
-					$('.value').intake('40g', 0, 1, '50g', '100g', '75g', 0, 1, 0, '100g', 1, 0);
+					$('.value').intake('40g', 0, 1, '50g', '100g', '75g', 0, 1, 0, '100g', 1, 0, 1000, 50, 119 ,25);
 				}
 				else{
 					$('#mealPlan').food('Oatmeal', 'Eggs', 'Apple', 'Chicken', 'Br. Rice', 'Vegetables', 'Protein bar', 'Yogurt', 'none', 'Steak', 'Sweet Potatoes', 'none');
