@@ -26,10 +26,8 @@ $(function(){
 			chicken = 150*meat 
 			steak = 100*meat;
 		}
-		var chickenAdd = parseFloat(chicken);
-		var steakAdd = parseFloat(steak);
-		var add1 =  chickenAdd.toFixed(0) + 'g';
-		var add2 = steakAdd.toFixed(0) + 'g';
+		var add1 =  parseFloat(chicken).toFixed(0) + 'g';
+		var add2 = parseFloat(steak).toFixed(0) + 'g';
 		var FatPr_Intake = ['48g',3,2,add1,'48g','125g',1,1,0,add2,0,0, CalShow.toFixed(0), proteinG.toFixed(0), carbs.toFixed(0), fatG.toFixed(0)]
 
 		return FatPr_Intake;
